@@ -30,7 +30,7 @@ function for_Loop() {
     document.getElementById("List_of_Instruments").innerHTML=content; 
 }
 
-//array 
+//array (document.getElementById().innerHTML Assignment) 
 function color_array() {
     var Colors=[]; 
     Colors[1] = "Red";
@@ -57,7 +57,7 @@ document.getElementById("tea").innerHTML="I have a " + tea.year + " " + tea.colo
 
 //These below will be in a separate document: 
 
-//document.getElementById().innerHTML Assignment 
+//async 
 //Const Keyword Assignment (things change mid-way)
 //Object Assignment 
 //Break & Continue Challenge 
