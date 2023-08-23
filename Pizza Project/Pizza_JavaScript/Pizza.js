@@ -7,7 +7,7 @@ function getReceipt() {
     var sizeArray=document.getElementsByClassName("size"); 
     for (var i=0; i<sizeArray.length; i++) {
         if (sizeArray[i].checked) {
-            var selectedSize=sizeArray[i].ariaValueMax; 
+            var selectedSize=sizeArray[i].value; 
             text1 = text1+selectedSize+"<br>"; 
         }
     }
@@ -34,7 +34,7 @@ function getTopping(runningTotal,text1) {
     var toppingArray = document.getElementsByClassName("toppings"); 
     for (var j=0; j<toppingArray.length; j++) {
         if (toppingArray[j].checked) {
-            selectedTopping.push(topping[j].value); 
+            selectedTopping.push(toppingArray[j].value); 
             console.log("selected topping item: ("+toppingArray[j].value+")"); 
             text1=text1+toppingArray[j].value+"<br>"; 
         }
