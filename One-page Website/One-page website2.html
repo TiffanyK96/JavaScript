@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tea-Tasting Travels</title>
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+	</head>
+	<body> 
+	
+		<!-- NAV -->
+		<div>
+			<div>
+				<nav> 
+					<ul>
+						<a href="#home" id="link"><li>Home</li></a>
+						<a href="#gallery" id="link"><li>Gallery</li></a>
+						<a href="#video" id="link"><li>Video</li></a>
+						<a href="#contact" id="link"><li>Reservations</i></a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--END NAV -->
+		
+		<!--HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>Tea-Tasting Travels</span>
+				</div>
+			</div>
+		</div>
+		<!--END HOME-->
+		
+		<!--Lightbox creation: images used to open the lightbox-->
+		<div class="row">
+			<div class="column">
+				<img src="Images/plant1-small.png" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="Images/plant2-small.png" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="Images/plant3-small.png" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="Images/plant4-small.png" onclick="openModal(); currentSlide(4)" class="hover-shadow">
+			</div>
+		</div>
+
+		<!--The Modal/Lightbox--> 
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="Images/plant1.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="Images/plant2.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="Images/plant3.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="Images/plant4.png" style="width:100%">
+			  </div>
+
+		<!-- GALLERY -->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div> 
+				
+					<!-- PHOTO CONTAINER 1 -->
+					<div> 
+						<div> 
+							<img src="https://github.com/TiffanyK96/HTML-and-CSS-Projects/blob/main/496429872_9e5a68a172_b.jpg?raw=true" height="300" width="375" alt="teacup with tea">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several teas and regions to choose from. Come on in!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 1 -->
+					
+					<!-- PHOTO CONTAINER 2 -->
+					<div> 
+						<div> 
+							<img src="https://github.com/TiffanyK96/HTML-and-CSS-Projects/blob/main/Eastern_tea.jpg?raw=true" height="300" width="415" alt="teapot with Chinese calligraphy">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several teas and regions to choose from. Come on in!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 2 -->
+					
+					<!-- PHOTO CONTAINER 3 -->
+					<div> 
+						<div> 
+							<img src="https://github.com/TiffanyK96/HTML-and-CSS-Projects/blob/main/Herbal_tea.jpeg?raw=true" height="300" width="375" alt="glass teapot with flowers">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several teas and regions to choose from. Come on in!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 3 -->
+					
+					<!-- PHOTO CONTAINER 4 -->
+					<div> 
+						<div> 
+							<img src="https://github.com/TiffanyK96/HTML-and-CSS-Projects/blob/main/Iranian_tea.jpg?raw=true" alt="Iranian tea">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several teas and regions to choose from. Come on in!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 4 -->
+					
+				</div>
+			</div> 
+		</section> 
+		<!-- END GALLERY -->
+		
+		<!-- VIDEO -->
+		<section>
+			<div id="video">
+				<div> 
+					<h1>Join our journey~</h1>
+					<div> 
+					
+						<iframe width="840" height="472.5" src="https://www.youtube.com/embed/t4Gcrc9lMog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+						</iframe>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END VIDEO -->
+		
+		<!-- RSVP --> 
+		<section> 
+			<div id="contact"> 
+				<div> 
+					<h1>Reservations</h1>
+					<div>
+						<h2><span>Come visit us</span>
+							<br />Make plans today! 
+						</h2>
+						<p> 
+							Contact information: 
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name"> 
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number"> 
+								<div class="forms-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div> 
+								<div> 
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP --> 
+		
+		<!-- FOOTER -->
+		<footer>
+			<div> 
+				<p>Author: Uncle Iroh</p>
+				www.tea-tasting_travels.com by the Order of the White Lotus tea department &nbsp;&nbsp;&copy; 2023 
+				<p><i>It's more than just hot leaf juice, Zuko.</i></p>
+			</div>
+		</footer>
+		<!--END FOOTER--> 
+		
+		<script src="JS/one_page_website.js"></script>
+
+	</body>
+</html> 
