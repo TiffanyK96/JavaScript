@@ -1,0 +1,22 @@
+    <!--Challenge 5-4-->
+    <div class="text-center">
+        <img src="./Img/R.jpeg" class="center" alt="Spirited Away by Hayao Miyazaki">          
+        <div class="bottom-left"><i>This is completely unrelated, but this one is actually one of my favourite films</i></div>
+    </div> 
+
+
+/*--4 To resolve: the text in the example used (w3school) all seem related. How to isolate?*/ 
+.container{
+    position: relative; 
+    text-align: center; 
+    color: white; 
+}
+
+.bottom-left{
+    position: absolute; 
+    bottom: 0px; 
+    left: 16px;
+}
+
+
+Let's say 1h20-5pm=4h40 
