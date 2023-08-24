@@ -1,0 +1,156 @@
+body {
+    background: #e4a93d
+}
+
+/*--thoughts for the future: how to contain overlay to solely image? (5-8)--*/ 
+.container text-center{
+    position: relative; 
+    width: 50%;
+}
+
+.overlay{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    height: 100%; 
+    width: 100%; 
+    opacity: 0; 
+    background-color: #008CBA;
+}
+
+.container:hover .overlay{
+    opacity: 1; 
+}
+
+.text{
+    color: white; 
+    font-size: 20px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+/*--question for the future: how to change links to italics when hovering?--*/
+ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background: #fc8d05;
+}
+
+li{
+    float: left; 
+}
+
+li a{
+    display: block; 
+    padding: 8px; 
+    font-weight: bold; 
+}
+
+a:link{
+    color: brown
+}
+
+a:hover{
+    color:rgb(200, 0, 255)
+}
+
+/*--- This is for the image --*/ 
+
+.center {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 35%
+}
+
+/*--CSS filter property & CSS border-radius property--*/ 
+img {
+    filter: sepia(100%);
+    border: 2px solid rgb(0, 255, 115); 
+    border-radius: 15px 15px 15px 15px;   
+    margin-bottom: 20px;
+} 
+
+/*--3 To resolve: how to adjust the border - the right is lopsided.*/ 
+table, th, td{
+    border: 1px solid; 
+ /*--I've tried either padding & table-layout: auto;--*/
+}
+
+th{
+    background-color:rgb(238, 181, 111);
+}
+
+/*--4 To resolve: the text in the example used (w3school) all seem related. How to isolate?*/ 
+.image-container{
+    position: relative; 
+    text-align: center; 
+}
+
+.image-container .bottom-left{
+    position: absolute; 
+    bottom: 8px; 
+    left: 352px;
+    color: darkgoldenrod
+}
+
+/*--Challente 5-6: how to add height & width (like before col-container)?--*/
+
+.col-container{
+    display: table; 
+    width: flex;
+    height: flex; 
+}
+
+.row{
+    display: flex; 
+    color:rgb(111, 9, 139)
+}
+
+.column{
+    flex: 50%; 
+    padding: 10px  
+}
+
+/*--Challenge 5-7--*/ 
+a:hover{
+    background-color: antiquewhite;
+}
+
+.container{
+    position: relative; 
+    text-align: center; 
+    color: white; 
+} 
+
+/*--Challenge 5-10: how to make "absolute" relative to vid instead of brower?--*/ 
+.video-container{
+    position: relative; 
+    text-align: center; 
+    color: white;
+}
+
+.video-container{
+    width: 100%;
+    height: auto; 
+}
+
+.video-container .centered{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+footer{
+    text-align: center;
+}
