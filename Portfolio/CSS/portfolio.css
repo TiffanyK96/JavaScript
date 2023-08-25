@@ -162,17 +162,17 @@ footer{
 
 /*** VIDEO STYLING ***/ 
 /* Formatting for background video */ 
-##Edited video.mp4 {
+#Typing_Video.mp4 {
     position: fixed; /* This fixes the video to the page */ 
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */ 
-    bottom: 0; /*This ensures no space between the bottom of the video and the bottom of the page*/ 
+    top: -215px; /*This pulls the video up to hide some of the black border at the top of the video */
     min-width: 100%; /*This ensures the video is displayed across the full width of the page */ 
     z-index: -1; /*This places the video behind the other elements on the page */ 
 }
 
 /* Screens that are 576px and smaller will not display the background video */ 
 @media screen and (max-width: 576px) {
-    #Edited video.mp4 {
+    #Typing_Video.mp4 {
         display: block; 
         align-items: center; 
     }
